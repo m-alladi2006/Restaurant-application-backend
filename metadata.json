@@ -1,0 +1,6 @@
+{
+  "name": "E-Commerce Store & REST API",
+  "description": "Full-stack E-Commerce application with React frontend and Express/Mongoose REST API backend including JWT authentication, product catalog, cart, wishlist, order management, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8081}
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: aurastore-backend
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/aurastore12_db}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:dGhpc0lzQVN1cGVyU2VjdXJlSldUU2VjcmV0S2V5Rm9yQXVyYVN0b3JlMjAyNg==}
+    expiration-ms: ${JWT_EXPIRATION_MS:604800000} # 7 days
+  cors:
+    allowed-origins: ${CLIENT_URL:http://localhost:3000,http://localhost:5173}
+
+logging:
+  level:
+    root: INFO
+    com.aurastore: DEBUG
+    org.springframework.security: INFO

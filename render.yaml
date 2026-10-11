@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: aurastore-backend
+    env: docker
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8081
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRATION_MS
+        value: "604800000"
+      - key: CLIENT_URL
+        value: "*"
