@@ -8,7 +8,7 @@ spring:
     name: aurastore-backend
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb://localhost:27017/aurastore12_db}
+      uri: ${MONGODB_URI:mongodb+srv://alladimanjunadh07_db_user:WPlYQlWTamrr6NRq@cluster0.omu28yr.mongodb.net/ShopEZ?retryWrites=true&w=majority&appName=Cluster0}
 
 app:
   jwt:
